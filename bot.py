@@ -18,7 +18,7 @@ PANEL_URL = os.getenv("PANEL_URL")
 SUB_URL = os.getenv("SUB_URL")
 USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")
-INBOUND_ID = os.getenv("INBOUND_ID")
+INBOUND_ID = int(os.getenv("INBOUND_ID"))
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
